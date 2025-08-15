@@ -12,7 +12,7 @@
 ---
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=katchkatcher&layout=compact&theme=dark)](https://github.com/katchkatcher)
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=katchkatcher&show_icons=true&theme=dark)](https://github.com/katchkatcher)
-[![Resume](https://img.shields.io/badge/Resume-PDF-blue)](<RESUME_URL>)
+[![Resume](https://img.shields.io/badge/Resume-PDF-blue)](resume.pdf)
 <!-- Добавь сюда статус сборки, если включишь CI: -->
 <!-- [![CI](<GITHUB_ACTIONS_BADGE>)](https://github.com/katchkatcher) -->
 
