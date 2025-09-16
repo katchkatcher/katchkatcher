@@ -17,7 +17,6 @@
 <!-- [![CI](<GITHUB_ACTIONS_BADGE>)](https://github.com/katchkatcher) -->
 
 <p align="center">
-  <img src="./assets/hero-demo.gif" alt="demo" width="800" />
 </p>
 
 ---
