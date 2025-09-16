@@ -81,7 +81,7 @@
 
 ## 📫 Контакты / отклик
 - Email: [danillloban333@gmail.com](mailto:danillloban333@gmail.com) — **лучше всего для предложений о работе**  
-- Telegram: [@yourtg](https://t.me/yourtg)  
+- Telegram: [@daniilcpp](https://t.me/daniilcpp)  
 - GitHub: https://github.com/katchkatcher
   
 ---
