@@ -19,7 +19,7 @@ Software Engineer with a focus on **Linux System Programming**, **High-Performan
 * Implemented manual parsing for Ethernet, IPv4, TCP, UDP, ICMP, ARP headers.
 * Integrated static analysis (Clang-Tidy) and automated testing.
 
-#### [Asynchronous WebSocket Messenger](https://github.com/katchkatcher/WebSocketMassenger)
+#### [Asynchronous WebSocket Messenger](https://github.com/katchkatcher/WebSocketMessenger)
 *High-density connection server using Boost.Asio & Boost.Beast.*
 * Implemented **Rate-limiting** and **Backpressure** control mechanisms.
 * Focused on handling peak loads without performance degradation.
