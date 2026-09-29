@@ -1,48 +1,46 @@
-# Daniil Loban | System & Network Software Engineer (C++)
+# Daniil Loban
 
-Software Engineer with a focus on **Linux System Programming**, **High-Performance Networking**, and **Low-latency** systems. 
+Software Engineer focused on **Linux Systems Programming**, **C++**, and **Network Infrastructure**.
 
----
-
-### 🛠 Core Expertise
-* **Systems:** Linux Kernel Tuning (IRQ Affinity, NUMA, MSI-X), Performance Optimization (>10 Gbps targets).
-* **Networking:** TCP/UDP/IP, IPsec/VPN Stack, RAW Sockets (AF_PACKET), Asynchronous I/O (Boost.Asio/Beast).
-* **Low-Level:** Firmware development (C/C++), HID protocol emulation, Embedded Systems (Arduino/STM32).
-* **C++:** Modern C++ (17/20), Multithreading, Lock-free data structures, RAII, Template Meta-programming.
+I specialize in L2/L3 packet processing, user space network services, and Linux-based infrastructure debugging. Passionate about modern C++ (17/20), network protocols, and system internals.
 
 ---
 
-### 🚀 Featured Projects
+### Technical Profile
 
-#### [Network Packet Analyzer](https://github.com/katchkatcher/NetworkPacketAnalyzer)
-*Low-level sniffer based on RAW/AF_PACKET sockets.*
-* Implemented manual parsing for Ethernet, IPv4, TCP, UDP, ICMP, ARP headers.
-* Integrated static analysis (Clang-Tidy) and automated testing.
-
-#### [Asynchronous WebSocket Messenger](https://github.com/katchkatcher/WebSocketMessenger)
-*High-density connection server using Boost.Asio & Boost.Beast.*
-* Implemented **Rate-limiting** and **Backpressure** control mechanisms.
-* Focused on handling peak loads without performance degradation.
-
-#### [GIMX (Fork & Custom Development)](https://github.com/katchkatcher/GIMX)
-*Embedded firmware for gaming peripheral emulation.*
-* Reverse-engineered HID descriptors for legacy hardware compatibility.
-* Worked with low-level I/O and Arduino-based adapters.
-
-#### [FinTech Low-Latency Simulation](https://github.com/katchkatcher/FinTechApp)
-*HFT core prototype focused on minimal processing latency.*
-* Achieved **<100 µs** processing latency in synthetic benchmarks.
-* Experimented with custom memory allocators and lock-free queues.
+- **Languages:** C++17, C, Bash, Python (automation), SQL.
+- **Networking:** TCP/IP, UDP, IPsec, RAW Sockets, L2/L3 framing, Boost.Asio/Beast.
+- **System & OS:** Linux (Debian, Ubuntu), POSIX API, Multithreading, Memory Management, Linux Kernel Module basics.
+- **Tools & Infra:** CMake, Git, Docker, GitLab CI/CD, GDB, Valgrind, Clang-Tidy, CTest, VMware.
 
 ---
 
-### 📈 Stats & Tools
-**Languages:** C, C++ (17/20), Python, Bash, SQL.  
-**Tools:** CMake, Docker, Wireshark, GitLab CI/CD, GDB, Valgrind.
+### Highlighted Projects
+
+#### [Linux Virtual Network Interface (`virt_iface`)](https://github.com/katchkatcher/virt_iface)
+*Linux Kernel Module implementing a virtual Ethernet interface with an active packet reflector.*
+- Intercepts outgoing ARP and ICMP Echo requests and reflects them back into the kernel RX path using `netif_rx()`.
+- Implemented real-time IP configuration via ProcFS API (`/proc/virt_iface`).
+- Adheres to Linux kernel coding standards (`checkpatch.pl` compliant) and includes automated test scripts.
+
+#### [Network Packet Sniffer](https://github.com/katchkatcher/Sniffer)
+*Lightweight L2/L3 packet analyzer written in C++17 using RAW/AF_PACKET sockets.*
+- Manual parsing for Ethernet (L2), IPv4/IPv6, TCP, UDP, ICMP(v6), ARP, and 802.1Q VLAN tags.
+- CLI interface with runtime filtering (IP, Port, Protocol, Interface) and terminal color-coded hexdump.
+- Integrated `Clang-Tidy` static analysis, `AddressSanitizer` support, and unit tests via `CTest`.
+
+#### [Asynchronous WebSocket Server](https://github.com/katchkatcher/WebSocketMessenger)
+*Multi-threaded WebSocket chat server built with Modern C++ and Boost.Beast / Boost.Asio.*
+- Implemented room-based message routing, UTF-8 validation (`utf8cpp`), and structured log rotation via `spdlog`.
+- Designed for high-concurrency connection handling with graceful shutdown support (`SIGINT`/`SIGTERM`).
+
+#### [Custom `UniquePtr` Implementation](https://github.com/katchkatcher/UniquePtr-implementation)
+*Educational implementation of a modern C++ smart pointer.*
+- Demonstrates RAII, strict move semantics, deleted copy operations, and custom deleter support.
 
 ---
 
-### 📫 Contact
-* **Telegram:** [@daniilcpp](https://t.me/daniilcpp)
-* **Email:** daniilloban333@gmail.com
-* **Location:** Minsk, Belarus (Open to relocation)
+### Contact & Links
+- **Telegram:** [@daniilcpp](https://t.me/daniilcpp)
+- **Email:** daniilloban333@gmail.com
+- **Location:** Minsk, Belarus
