@@ -1,42 +1,51 @@
 # Daniil Loban
 
-Software Engineer focused on **Linux Systems Programming**, **C++**, and **Network Infrastructure**.
+**C/C++ Network & Systems Software Engineer** focused on Linux systems programming, network protocols, and cryptographic information protection software.
 
-I specialize in L2/L3 packet processing, user space network services, and Linux-based infrastructure debugging. Passionate about modern C++ (17/20), network protocols, and system internals.
+---
+
+### Professional Summary
+C/C++ Software Engineer with commercial experience at **S-Terra Bel**, developing Linux-based IPsec/VPN solutions and cryptographic protection software. Experienced in license verification mechanisms, IKEv1 Quick Mode handling, GRE-over-IPsec tunnel management, low-level networking protocols, and kernel-space/user-space interaction.
 
 ---
 
 ### Technical Profile
-
-- **Languages:** C++17, C, Bash, Python (automation), SQL.
-- **Networking:** TCP/IP, UDP, IPsec, RAW Sockets, L2/L3 framing, Boost.Asio/Beast.
-- **System & OS:** Linux (Debian, Ubuntu), POSIX API, Multithreading, Memory Management, Linux Kernel Module basics.
-- **Tools & Infra:** CMake, Git, Docker, GitLab CI/CD, GDB, Valgrind, Clang-Tidy, CTest, VMware.
+- **Languages:** C, C++17, Python, Bash, SQL
+- **C/C++ Core:** STL, RAII, Memory Management, Object-Oriented Programming
+- **Networking:** TCP/IP, UDP, Ethernet, ARP, ICMP, IPsec, IKEv1, GRE-over-IPsec, Raw Sockets, AF_PACKET
+- **Linux Systems Programming:** Linux API, Kernel Modules, ProcFS, `sk_buff`, User/Kernel Space interaction, GDB, DPDK
+- **Tools & Frameworks:** CMake, Make, Git, VMware, Clang, Clang-Tidy, CTest, Boost.Asio, Buildroot, Device Tree (DTS)
+- **Spoken Languages:** Russian (Native), English (A2 – Technical Reading)
 
 ---
 
 ### Highlighted Projects
 
 #### [Linux Virtual Network Interface (`virt_iface`)](https://github.com/katchkatcher/virt_iface)
-*Linux Kernel Module implementing a virtual Ethernet interface with an active packet reflector.*
-- Intercepts outgoing ARP and ICMP Echo requests and reflects them back into the kernel RX path using `netif_rx()`.
-- Implemented real-time IP configuration via ProcFS API (`/proc/virt_iface`).
-- Adheres to Linux kernel coding standards (`checkpatch.pl` compliant) and includes automated test scripts.
+*Linux Kernel Module providing a virtual Ethernet interface with ICMP ping response.*
+- Implemented ARP and ICMP echo request/reply processing, packet header transformation, and injection into the Linux network stack.
+- Added real-time IP interface configuration via ProcFS.
+- Created automated test scripts covering module building, loading, configuration, and ping validation.
+- **Technologies:** C, Linux Kernel APIs, Network Devices, `sk_buff`, ProcFS, ARP, ICMP, Make
 
-#### [Network Packet Sniffer](https://github.com/katchkatcher/Sniffer)
-*Lightweight L2/L3 packet analyzer written in C++17 using RAW/AF_PACKET sockets.*
-- Manual parsing for Ethernet (L2), IPv4/IPv6, TCP, UDP, ICMP(v6), ARP, and 802.1Q VLAN tags.
-- CLI interface with runtime filtering (IP, Port, Protocol, Interface) and terminal color-coded hexdump.
-- Integrated `Clang-Tidy` static analysis, `AddressSanitizer` support, and unit tests via `CTest`.
+#### [Network Packet Sniffer (`Sniffer`)](https://github.com/katchkatcher/Sniffer)
+*Linux packet analyzer implemented using AF_PACKET / RAW sockets.*
+- Parsed Ethernet, IPv4, IPv6, TCP, UDP, ICMP, ARP, and 802.1Q VLAN frames.
+- Implemented runtime filtering by protocol, IP address, port, and network interface with hex-dump payload output.
+- Included packet length validation, truncated packet handling, unit tests, and AddressSanitizer integration.
+- **Technologies:** C++17, Linux Sockets, AF_PACKET, CMake, CTest, Clang-Tidy, AddressSanitizer
 
-#### [Asynchronous WebSocket Server](https://github.com/katchkatcher/WebSocketMessenger)
-*Multi-threaded WebSocket chat server built with Modern C++ and Boost.Beast / Boost.Asio.*
-- Implemented room-based message routing, UTF-8 validation (`utf8cpp`), and structured log rotation via `spdlog`.
-- Designed for high-concurrency connection handling with graceful shutdown support (`SIGINT`/`SIGTERM`).
+#### Stanford CS144 Networking Project *(Private Repository)*
+*Implementation of custom TCP protocol stack components.*
+- Developed `ByteStream`, `Reassembler`, `TCP Sender`, and `TCP Receiver` components.
+- Applied sliding window, stream reassembly, and flow control concepts.
+- **Technologies:** C++, TCP, Flow Control, Algorithms & Data Structures
 
-#### [Custom `UniquePtr` Implementation](https://github.com/katchkatcher/UniquePtr-implementation)
-*Educational implementation of a modern C++ smart pointer.*
-- Demonstrates RAII, strict move semantics, deleted copy operations, and custom deleter support.
+#### [Embedded Linux / Buildroot (`buildroot-external-inmys`)](https://github.com/katchkatcher/buildroot-external-inmys)
+*Customized embedded Linux system for Rockchip hardware.*
+- Configured Buildroot and updated Device Tree (DTS) to enable an additional CAN interface.
+- Built and flashed custom firmware images.
+- **Technologies:** Embedded Linux, Buildroot, Device Tree (DTS), CAN, Rockchip
 
 ---
 
